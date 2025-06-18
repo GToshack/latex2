@@ -1,0 +1,13 @@
+<title>ShorTeX</title>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div id="math-container" style="visibility:hidden; position:absolute;"></div>
+<canvas id="canvas" style="display:none;"></canvas>
+
+<textarea id="input" value="\p{Hello, World!}"></textarea>
+<input id="resolution" value="10">
+<br><br>
+<button onclick="regex(), generatePNG()">Render</button>
+&nbsp (10 is likely the highest res you'll ever need, 6 or 7 is reccommended)
+<br><br>
+<img id="output" alt="Rendered PNG">
+<script src="main.js"></script>
